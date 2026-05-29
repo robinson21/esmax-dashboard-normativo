@@ -1,27 +1,32 @@
 #!/usr/bin/env python3
 """Read ESMAX Google Sheet and export as JSON for the dashboard."""
 import json, os, sys
-import googleapiclient.discovery
-import google.oauth2.credentials
+from urllib.request import Request, urlopen
+from urllib.parse import urlencode
 
 SHEET_ID = os.environ['SHEET_ID']
+CLIENT_ID = os.environ['GOOGLE_CLIENT_ID']
+CLIENT_SECRET = os.environ['GOOGLE_CLIENT_SECRET']
+REFRESH_TOKEN = os.environ['GOOGLE_REFRESH_TOKEN']
 
-def get_creds():
-    return google.oauth2.credentials.Credentials(
-        token=None,
-        refresh_token=os.environ['GOOGLE_REFRESH_TOKEN'],
-        token_uri='https://oauth2.googleapis.com/token',
-        client_id=os.environ['GOOGLE_CLIENT_ID'],
-        client_secret=os.environ['GOOGLE_CLIENT_SECRET'],
-        scopes=['https://www.googleapis.com/auth/spreadsheets.readonly']
-    )
+def get_access_token():
+    """Refresh the OAuth token."""
+    data = urlencode({
+        'client_id': CLIENT_ID,
+        'client_secret': CLIENT_SECRET,
+        'refresh_token': REFRESH_TOKEN,
+        'grant_type': 'refresh_token'
+    }).encode()
+    req = Request('https://oauth2.googleapis.com/token', data=data)
+    resp = json.loads(urlopen(req).read())
+    return resp['access_token']
 
-def sheet_to_dict(service, sheet_name, range_str):
-    data = service.spreadsheets().values().get(
-        spreadsheetId=SHEET_ID,
-        range=f"'{sheet_name}'!{range_str}"
-    ).execute()
-    rows = data.get('values', [])
+def fetch_sheet(access_token, sheet_name, range_str):
+    """Read a sheet tab via Google Sheets API v4."""
+    url = f"https://sheets.googleapis.com/v4/spreadsheets/{SHEET_ID}/values/'{sheet_name}'!{range_str}"
+    req = Request(url, headers={'Authorization': f'Bearer {access_token}'})
+    resp = json.loads(urlopen(req).read())
+    rows = resp.get('values', [])
     if not rows:
         return []
     headers = rows[0]
@@ -34,11 +39,10 @@ def sheet_to_dict(service, sheet_name, range_str):
     return result
 
 def main():
-    service = googleapiclient.discovery.build('sheets', 'v4', credentials=get_creds())
-    
-    fichas = sheet_to_dict(service, 'Fichas de Cumplimiento', 'A1:L200')
-    planes = sheet_to_dict(service, 'Plan de Acción', 'A1:I200')
-    resumen = sheet_to_dict(service, 'Resumen Normas Aplicables', 'A1:G200')
+    token = get_access_token()
+    fichas = fetch_sheet(token, 'Fichas de Cumplimiento', 'A1:L200')
+    planes = fetch_sheet(token, 'Plan de Acción', 'A1:I200')
+    resumen = fetch_sheet(token, 'Resumen Normas Aplicables', 'A1:G200')
     
     output = {
         'fichas': fichas,
