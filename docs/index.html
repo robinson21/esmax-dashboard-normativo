@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ESMAX — Dashboard Normativo LIVE</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<style>
+:root{--bg:#0f1117;--surface:#1a1d27;--surface2:#232632;--border:#2d3142;--text:#e8eaf0;--text2:#9ca3b4;--accent:#4f8ff7;--accent2:#6da1ff;--green:#22c55e;--yellow:#f59e0b;--red:#ef4444;--orange:#f97316;--purple:#a855f7;--cyan:#06b6d4;--radius:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.5;min-height:100vh}
+.header{background:linear-gradient(135deg,var(--surface),var(--surface2));border-bottom:1px solid var(--border);padding:18px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.header h1{font-size:1.35em;font-weight:700;display:flex;align-items:center;gap:8px}
+.header h1 .dot{width:10px;height:10px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.header .meta{font-size:.82em;color:var(--text2);display:flex;gap:16px;flex-wrap:wrap}
+.header .meta b{color:var(--text)}
+.sync-badge{background:var(--green);color:#000;font-size:.72em;font-weight:700;padding:2px 8px;border-radius:20px;display:inline-flex;align-items:center;gap:4px}
+.sync-badge.stale{background:var(--yellow)}
+.sync-badge.error{background:var(--red);color:#fff}
+.btn{background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.82em;display:inline-flex;align-items:center;gap:6px;transition:all .15s}
+.btn:hover{background:var(--border);border-color:var(--accent)}
+.btn-sm{padding:4px 10px;font-size:.75em}
+.tabs{display:flex;gap:4px;padding:16px 24px 0;overflow-x:auto}
+.tab{padding:8px 16px;border-radius:8px 8px 0 0;cursor:pointer;font-size:.85em;font-weight:500;color:var(--text2);background:var(--surface);border:1px solid transparent;border-bottom:none;transition:all .15s;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.tab:hover{color:var(--text);background:var(--surface2)}
+.tab.active{color:var(--accent);background:var(--surface2);border-color:var(--border);font-weight:600}
+.tab .count{background:var(--accent);color:#fff;font-size:.7em;padding:1px 7px;border-radius:10px;font-weight:700}
+.content{padding:0 24px 24px}
+.panel{display:none;background:var(--surface2);border:1px solid var(--border);border-radius:0 0 var(--radius) var(--radius);padding:20px;overflow-x:auto}
+.panel.active{display:block}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center}
+.kpi .num{font-size:2em;font-weight:800;line-height:1.1}
+.kpi .lbl{font-size:.78em;color:var(--text2);margin-top:4px}
+.kpi.green .num{color:var(--green)}
+.kpi.yellow .num{color:var(--yellow)}
+.kpi.red .num{color:var(--red)}
+.kpi.blue .num{color:var(--accent)}
+.kpi.purple .num{color:var(--purple)}
+.kpi.cyan .num{color:var(--cyan)}
+table{width:100%;border-collapse:collapse;font-size:.82em}
+th{background:var(--surface);color:var(--text2);font-weight:600;text-align:left;padding:8px 10px;border-bottom:2px solid var(--border);position:sticky;top:0;white-space:nowrap}
+td{padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:hover td{background:rgba(79,143,247,.05)}
+.badge{display:inline-block;padding:2px 10px;border-radius:20px;font-size:.75em;font-weight:600}
+.badge-green{background:rgba(34,197,94,.15);color:var(--green)}
+.badge-yellow{background:rgba(245,158,11,.15);color:var(--yellow)}
+.badge-red{background:rgba(239,68,68,.15);color:var(--red)}
+.badge-orange{background:rgba(249,115,22,.15);color:var(--orange)}
+.badge-blue{background:rgba(79,143,247,.15);color:var(--accent)}
+.badge-purple{background:rgba(168,85,247,.15);color:var(--purple)}
+.badge-cyan{background:rgba(6,182,212,.15);color:var(--cyan)}
+.badge-gray{background:rgba(156,163,180,.15);color:var(--text2)}
+.search-row{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.search-row input,.search-row select{background:var(--surface);border:1px solid var(--border);color:var(--text);padding:7px 12px;border-radius:6px;font-size:.85em}
+.search-row input{flex:1;min-width:200px}
+.search-row select{min-width:130px}
+.table-wrap{max-height:65vh;overflow-y:auto;border-radius:var(--radius);border:1px solid var(--border)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.detail-btn{cursor:pointer;color:var(--accent);font-size:1.1em}
+.detail-btn:hover{transform:scale(1.2)}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:100;align-items:center;justify-content:center;padding:16px}
+.modal-overlay.active{display:flex}
+.modal{background:var(--surface2);border:1px solid var(--border);border-radius:12px;max-width:720px;width:100%;max-height:85vh;overflow-y:auto;padding:24px}
+.modal h2{font-size:1.15em;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.modal .subtitle{color:var(--text2);font-size:.85em;margin-bottom:16px}
+.modal .section{margin-bottom:16px}
+.modal .section h3{font-size:.9em;color:var(--accent2);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.modal .box{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:.85em;line-height:1.6}
+.modal .close-btn{float:right;cursor:pointer;font-size:1.3em;color:var(--text2);line-height:1}
+.modal .close-btn:hover{color:var(--text)}
+.charts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:20px}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+.chart-card h3{font-size:.88em;color:var(--text2);margin-bottom:10px}
+.chart-bars{display:flex;flex-direction:column;gap:6px}
+.chart-bar{display:flex;align-items:center;gap:8px;font-size:.78em}
+.chart-bar .fill{height:18px;border-radius:4px;min-width:4px;transition:width .5s}
+.chart-bar .val{min-width:28px;text-align:right;font-weight:600}
+.footer{text-align:center;padding:16px;font-size:.75em;color:var(--text2);border-top:1px solid var(--border);margin-top:20px}
+.plan-step{display:flex;gap:10px;margin-bottom:10px;font-size:.85em}
+.plan-step .step-num{min-width:26px;height:26px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75em;font-weight:700;flex-shrink:0}
+.plan-step .step-content{flex:1}
+.plan-step .step-content b{color:var(--accent2)}
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px;gap:12px;color:var(--text2)}
+.spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:768px){.header{padding:12px 16px}.tabs,.content{padding-left:12px;padding-right:12px}table{font-size:.75em}th,td{padding:5px 6px}.kpis{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1><span class="dot"></span> ESMAX — Dashboard Normativo <span style="font-size:.6em;color:var(--text2)">LIVE</span></h1>
+<div class="meta">
+<span>🔗 Conectado a Google Sheets</span>
+<span>🕐 Último sync: <b id="last-sync">—</b></span>
+<span id="sync-badge" class="sync-badge">Cargando...</span>
+</div>
+<button class="btn" onclick="location.reload()" title="Refrescar datos">🔄 Refrescar</button>
+<button class="btn" onclick="exportCSV()">📥 Exportar CSV</button>
+</div>
+
+<div class="tabs" id="tabs"></div>
+
+<div class="content">
+<div class="kpis" id="kpis"></div>
+<div class="charts-row" id="charts"></div>
+<div class="search-row">
+<input type="text" id="search" placeholder="🔍 Buscar norma, nombre, ámbito..." oninput="filterTable()">
+<select id="filter-ambito" onchange="filterTable()"><option value="">Todos los ámbitos</option></select>
+<select id="filter-aplica" onchange="filterTable()"><option value="">Aplicabilidad</option></select>
+<select id="filter-estado" onchange="filterTable()"><option value="">Estado</option></select>
+</div>
+<div class="panel active" id="panel-fichas"><div class="table-wrap"><table id="tbl-fichas"><thead></thead><tbody></tbody></table></div></div>
+<div class="panel" id="panel-planes"><div class="table-wrap"><table id="tbl-planes"><thead></thead><tbody></tbody></table></div></div>
+<div class="panel" id="panel-resumen"><div class="table-wrap"><table id="tbl-resumen"><thead></thead><tbody></tbody></table></div></div>
+</div>
+
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+<div class="modal" id="modal-content"></div>
+</div>
+
+<div class="footer">
+Dashboard Normativo ESMAX — Datos sincronizados desde Google Sheets cada 6 horas<br>
+Actualización automática vía GitHub Actions · <a href="https://github.com/robinson21/esmax-dashboard-normativo" target="_blank">Repo</a>
+</div>
+
+<script>
+const SHEET_DATA_URL = 'data.json';
+let DATA = null;
+
+async function loadData() {
+  try {
+    const r = await fetch(SHEET_DATA_URL + '?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    DATA = await r.json();
+    document.getElementById('sync-badge').textContent = '✅ Conectado';
+    document.getElementById('sync-badge').className = 'sync-badge';
+    const syncTime = DATA.last_sync ? new Date(DATA.last_sync).toLocaleString('es-CL') : '—';
+    document.getElementById('last-sync').textContent = syncTime;
+    renderAll();
+  } catch(e) {
+    document.getElementById('sync-badge').textContent = '❌ Error';
+    document.getElementById('sync-badge').className = 'sync-badge error';
+    document.getElementById('last-sync').textContent = 'Sin datos';
+    document.querySelector('.kpis').innerHTML = '<div class="kpi" style="grid-column:1/-1"><div class="num" style="color:var(--red);font-size:1.2em">❌ No se pudo cargar data.json</div><div class="lbl">Verifica que el GitHub Action se haya ejecutado al menos una vez</div></div>';
+  }
+}
+
+function badgeClass(txt) {
+  if (!txt) return 'badge-gray';
+  const t = txt.toLowerCase();
+  if (['si','vigente','completo','cumplido','implementado'].some(x=>t.includes(x))) return 'badge-green';
+  if (['parcial','en proceso','en revisión','en revisión'].some(x=>t.includes(x))) return 'badge-yellow';
+  if (['no','derogado','vencido','incumplimiento','pendiente'].some(x=>t.includes(x))) return 'badge-red';
+  if (['baja','menor','observación'].some(x=>t.includes(x))) return 'badge-orange';
+  if (['alta','crítico','urgente'].some(x=>t.includes(x))) return 'badge-purple';
+  return 'badge-blue';
+}
+
+function ambitoClass(a) {
+  if (!a) return 'badge-gray';
+  const t = a.toLowerCase();
+  if (t.includes('sst')) return 'badge-green';
+  if (t.includes('combustib') || t.includes('sec')) return 'badge-orange';
+  if (t.includes('medioamb') || t.includes('ambiental') || t.includes('riles') || t.includes('residuo')) return 'badge-cyan';
+  if (t.includes('seguridad pat') || t.includes('seg pat')) return 'badge-purple';
+  return 'badge-blue';
+}
+
+function renderAll() {
+  if (!DATA) return;
+  renderKPIs();
+  renderCharts();
+  renderTabs();
+  populateFilters();
+  renderFichas(DATA.fichas);
+  renderPlanes(DATA.planes);
+  renderResumen(DATA.resumen);
+}
+
+function renderKPIs() {
+  const f = DATA.fichas;
+  const total = f.length;
+  const si = f.filter(x=>(x.Aplica||'').toLowerCase().includes('si')).length;
+  const parcial = f.filter(x=>(x.Aplica||'').toLowerCase().includes('parcial')).length;
+  const vigentes = f.filter(x=>(x.Estado||'').toLowerCase().includes('vigente')).length;
+  const enProceso = f.filter(x=>(x.Estado||'').toLowerCase().includes('proceso')).length;
+  const pendientes = f.filter(x=>(x.Estado||'').toLowerCase().includes('pendiente')).length;
+
+  document.getElementById('kpis').innerHTML = `
+    <div class="kpi blue"><div class="num">${total}</div><div class="lbl">Total Normas</div></div>
+    <div class="kpi green"><div class="num">${si}</div><div class="lbl">Aplica SI</div></div>
+    <div class="kpi yellow"><div class="num">${parcial}</div><div class="lbl">Aplica Parcial</div></div>
+    <div class="kpi green"><div class="num">${vigentes}</div><div class="lbl">Vigentes</div></div>
+    <div class="kpi yellow"><div class="num">${enProceso}</div><div class="lbl">En Proceso</div></div>
+    <div class="kpi red"><div class="num">${pendientes}</div><div class="lbl">Pendientes</div></div>
+  `;
+}
+
+function renderCharts() {
+  const f = DATA.fichas;
+  // By ámbito
+  const ambitos = {};
+  f.forEach(x => { const a = x['Ámbito'] || 'Sin ámbito'; ambitos[a] = (ambitos[a]||0) + 1; });
+  const sorted = Object.entries(ambitos).sort((a,b) => b[1]-a[1]);
+  const maxVal = sorted[0]?.[1] || 1;
+  const colors = ['var(--green)','var(--orange)','var(--cyan)','var(--purple)','var(--accent)','var(--yellow)','var(--red)'];
+  
+  let ambitoBars = sorted.map((x,i) => `
+    <div class="chart-bar"><span style="min-width:120px">${x[0]}</span><div class="fill" style="width:${(x[1]/maxVal*100)}%;background:${colors[i%colors.length]}"></div><span class="val">${x[1]}</span></div>
+  `).join('');
+
+  // By estado
+  const estados = {};
+  f.forEach(x => { const e = x['Estado'] || 'Sin estado'; estados[e] = (estados[e]||0) + 1; });
+  const sortedE = Object.entries(estados).sort((a,b) => b[1]-a[1]);
+  const maxE = sortedE[0]?.[1] || 1;
+  const estadoColors = {'Vigente':'var(--green)','En Proceso':'var(--yellow)','Pendiente':'var(--red)','Derogado':'var(--text2)'};
+  
+  let estadoBars = sortedE.map(x => `
+    <div class="chart-bar"><span style="min-width:120px">${x[0]}</span><div class="fill" style="width:${(x[1]/maxE*100)}%;background:${estadoColors[x[0]]||'var(--accent)'}"></div><span class="val">${x[1]}</span></div>
+  `).join('');
+
+  document.getElementById('charts').innerHTML = `
+    <div class="chart-card"><h3>📊 Normas por Ámbito</h3><div class="chart-bars">${ambitoBars}</div></div>
+    <div class="chart-card"><h3>📈 Normas por Estado</h3><div class="chart-bars">${estadoBars}</div></div>
+  `;
+}
+
+function renderTabs() {
+  document.getElementById('tabs').innerHTML = `
+    <div class="tab active" data-panel="panel-fichas" onclick="switchTab(this)">📋 Fichas <span class="count">${DATA.fichas.length}</span></div>
+    <div class="tab" data-panel="panel-planes" onclick="switchTab(this)">📝 Planes <span class="count">${DATA.planes.length}</span></div>
+    <div class="tab" data-panel="panel-resumen" onclick="switchTab(this)">📊 Resumen <span class="count">${DATA.resumen.length}</span></div>
+  `;
+}
+
+function switchTab(el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById(el.dataset.panel).classList.add('active');
+}
+
+function populateFilters() {
+  const f = DATA.fichas;
+  const ambitos = [...new Set(f.map(x => x['Ámbito']).filter(Boolean))].sort();
+  const aplica = [...new Set(f.map(x => x['Aplica']).filter(Boolean))].sort();
+  const estados = [...new Set(f.map(x => x['Estado']).filter(Boolean))].sort();
+  
+  const sA = document.getElementById('filter-ambito');
+  sA.innerHTML = '<option value="">Todos los ámbitos</option>' + ambitos.map(a => `<option value="${a}">${a}</option>`).join('');
+  const sP = document.getElementById('filter-aplica');
+  sP.innerHTML = '<option value="">Aplicabilidad</option>' + aplica.map(a => `<option value="${a}">${a}</option>`).join('');
+  const sE = document.getElementById('filter-estado');
+  sE.innerHTML = '<option value="">Estado</option>' + estados.map(a => `<option value="${a}">${a}</option>`).join('');
+}
+
+function renderFichas(data) {
+  const thead = document.querySelector('#tbl-fichas thead');
+  const tbody = document.querySelector('#tbl-fichas tbody');
+  thead.innerHTML = '<tr><th></th><th>ID</th><th>Norma</th><th>Nombre</th><th>Ámbito</th><th>Org.</th><th>Aplica</th><th>Estado</th><th>Responsable</th><th>Frecuencia</th></tr>';
+  tbody.innerHTML = data.map((r,i) => `<tr>
+    <td><span class="detail-btn" onclick="openDetail(${i})" title="Ver detalle">📋</span></td>
+    <td>${r.ID||''}</td>
+    <td><b>${r.Norma||''}</b></td>
+    <td style="max-width:280px">${r.Nombre||''}</td>
+    <td><span class="badge ${ambitoClass(r['Ámbito'])}">${r['Ámbito']||''}</span></td>
+    <td>${r.Organismo||''}</td>
+    <td><span class="badge ${badgeClass(r.Aplica)}">${r.Aplica||''}</span></td>
+    <td><span class="badge ${badgeClass(r.Estado)}">${r.Estado||''}</span></td>
+    <td>${r.Responsable||''}</td>
+    <td>${r['Frecuencia Verificación']||r.Frecuencia||''}</td>
+  </tr>`).join('');
+}
+
+function renderPlanes(data) {
+  const thead = document.querySelector('#tbl-planes thead');
+  const tbody = document.querySelector('#tbl-planes tbody');
+  thead.innerHTML = '<tr><th>ID</th><th>Norma</th><th>Ámbito</th><th>Acción Requerida</th><th>Prioridad</th><th>Estado Avance</th><th>Responsable</th><th>Fecha Término</th><th>Verificación</th></tr>';
+  tbody.innerHTML = data.map(r => `<tr>
+    <td>${r.ID||''}</td>
+    <td><b>${r.Norma||''}</b></td>
+    <td><span class="badge ${ambitoClass(r['Ámbito'])}">${r['Ámbito']||''}</span></td>
+    <td style="max-width:350px">${r['Acción Requerida']||''}</td>
+    <td><span class="badge ${badgeClass(r.Prioridad)}">${r.Prioridad||''}</span></td>
+    <td><span class="badge ${badgeClass(r['Estado Avance'])}">${r['Estado Avance']||''}</span></td>
+    <td>${r.Responsable||''}</td>
+    <td>${r['Fecha Término']||''}</td>
+    <td>${r.Verificación||''}</td>
+  </tr>`).join('');
+}
+
+function renderResumen(data) {
+  const thead = document.querySelector('#tbl-resumen thead');
+  const tbody = document.querySelector('#tbl-resumen tbody');
+  thead.innerHTML = '<tr><th>ID</th><th>Norma</th><th>Nombre</th><th>Ámbito</th><th>Organismo</th><th>Aplica</th><th>Link</th></tr>';
+  tbody.innerHTML = data.map(r => `<tr>
+    <td>${r.ID||''}</td>
+    <td><b>${r.Norma||''}</b></td>
+    <td style="max-width:350px">${r.Nombre||''}</td>
+    <td><span class="badge ${ambitoClass(r['Ámbito/Área'])}">${r['Ámbito/Área']||''}</span></td>
+    <td>${r.Organismo||''}</td>
+    <td><span class="badge ${badgeClass(r.Aplica)}">${r.Aplica||''}</span></td>
+    <td>${r['Link Norma'] ? `<a href="${r['Link Norma']}" target="_blank">🔗 Ver</a>` : ''}</td>
+  </tr>`).join('');
+}
+
+function filterTable() {
+  if (!DATA) return;
+  const q = document.getElementById('search').value.toLowerCase();
+  const ambito = document.getElementById('filter-ambito').value;
+  const aplica = document.getElementById('filter-aplica').value;
+  const estado = document.getElementById('filter-estado').value;
+  
+  const filtered = DATA.fichas.filter(r => {
+    if (q && !Object.values(r).some(v => (v||'').toLowerCase().includes(q))) return false;
+    if (ambito && r['Ámbito'] !== ambito) return false;
+    if (aplica && r.Aplica !== aplica) return false;
+    if (estado && r.Estado !== estado) return false;
+    return true;
+  });
+  renderFichas(filtered);
+}
+
+function openDetail(idx) {
+  const r = DATA.fichas[idx];
+  if (!r) return;
+  
+  // Find matching plan
+  const plan = DATA.planes.find(p => p.ID === r.ID);
+  
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <span class="close-btn" onclick="closeModal()">✕</span>
+    <h2>${r.Norma || ''} <span style="color:var(--text2);font-weight:400;font-size:.85em">${r.ID || ''}</span></h2>
+    <div class="subtitle">${r.Nombre || ''}</div>
+    
+    <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+      <span class="badge ${ambitoClass(r['Ámbito'])}">${r['Ámbito'] || ''}</span>
+      <span class="badge ${badgeClass(r.Aplica)}">${r.Aplica || ''}</span>
+      <span class="badge ${badgeClass(r.Estado)}">${r.Estado || ''}</span>
+    </div>
+    
+    <div class="section">
+      <h3>📝 Justificación</h3>
+      <div class="box">${r['Justificación'] || 'Sin información'}</div>
+    </div>
+    
+    <div class="section">
+      <h3>📋 Método de Cumplimiento</h3>
+      <div class="box">${r['Método Cumplimiento'] || 'Sin información'}</div>
+    </div>
+    
+    <div class="section">
+      <h3>⏱️ Frecuencia de Verificación</h3>
+      <div class="box">${r['Frecuencia Verificación'] || 'Sin información'}</div>
+    </div>
+    
+    <div class="section">
+      <h3>👤 Responsable</h3>
+      <div class="box">${r.Responsable || 'Sin asignar'}</div>
+    </div>
+    
+    ${r['Link Norma'] ? `<div class="section"><h3>🔗 Enlace a Norma</h3><div class="box"><a href="${r['Link Norma']}" target="_blank">${r['Link Norma']}</a></div></div>` : ''}
+    
+    ${plan ? `
+    <div class="section">
+      <h3>📝 Plan de Acción</h3>
+      <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+        <span class="badge ${badgeClass(plan.Prioridad)}">Prioridad: ${plan.Prioridad || '—'}</span>
+        <span class="badge ${badgeClass(plan['Estado Avance'])}">Avance: ${plan['Estado Avance'] || '—'}</span>
+        ${plan['Fecha Término'] ? `<span class="badge badge-blue">Plazo: ${plan['Fecha Término']}</span>` : ''}
+      </div>
+      <div class="box">
+        <b>Acción:</b> ${plan['Acción Requerida'] || '—'}<br>
+        <b>Responsable:</b> ${plan.Responsable || '—'}<br>
+        <b>Verificación:</b> ${plan.Verificación || '—'}
+      </div>
+    </div>
+    ` : ''}
+  `;
+  
+  document.getElementById('modal').classList.add('active');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+}
+
+function exportCSV() {
+  if (!DATA) return;
+  const f = DATA.fichas;
+  if (!f.length) return;
+  const headers = Object.keys(f[0]);
+  const csv = [headers.join(';'), ...f.map(r => headers.map(h => '"' + (r[h]||'').replace(/"/g,'""') + '"').join(';'))].join('\n');
+  const blob = new Blob(['\ufeff' + csv], {type:'text/csv;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `ESMAX_Normativa_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
+
+loadData();
+</script>
+</body>
+</html>
