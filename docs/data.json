@@ -979,6 +979,146 @@
       "Responsable": "Jefe Planta",
       "Estado": "Vigente",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-082",
+      "Norma": "DS 27/2026",
+      "Nombre": "Decreto 27 Exento",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-083",
+      "Norma": "DS 1047/2026",
+      "Nombre": "Decreto 1047 Exento",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-084",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto 75 Exento",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan residuos peligrosos regulados por MINSAL",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-085",
+      "Norma": "DS 309/2026",
+      "Nombre": "Decreto 309",
+      "Ámbito": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan trabajadores regulados por SUSESO",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-086",
+      "Norma": "Resolución 74 Exenta",
+      "Nombre": "Resolución 74 Exenta",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan residuos peligrosos regulados por MINSAL",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-087",
+      "Norma": "DS 27/2026",
+      "Nombre": "Decreto 27 Exento",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-088",
+      "Norma": "DS 1047/2026",
+      "Nombre": "Decreto 1047 Exento",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-089",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto 75 Exento",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan residuos peligrosos regulados por MINSAL",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-090",
+      "Norma": "DS 309/2026",
+      "Nombre": "Decreto 309",
+      "Ámbito": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan trabajadores regulados por SUSESO",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-091",
+      "Norma": "Resolución 74 Exenta",
+      "Nombre": "Resolución 74 Exenta",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan residuos peligrosos regulados por MINSAL",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
     }
   ],
   "planes": [
@@ -1751,6 +1891,116 @@
       "Responsable": "Jefe Planta",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-082",
+      "Norma": "DS 27/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-083",
+      "Norma": "DS 1047/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-084",
+      "Norma": "DS 75/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-085",
+      "Norma": "DS 309/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-086",
+      "Norma": "Resolución 74 Exenta",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-087",
+      "Norma": "DS 27/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-088",
+      "Norma": "DS 1047/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-089",
+      "Norma": "DS 75/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-090",
+      "Norma": "DS 309/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-091",
+      "Norma": "Resolución 74 Exenta",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -2383,7 +2633,97 @@
       "Organismo": "aduana",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-082",
+      "Norma": "DS 27/2026",
+      "Nombre": "Decreto 27 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-083",
+      "Norma": "DS 1047/2026",
+      "Nombre": "Decreto 1047 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-084",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto 75 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-085",
+      "Norma": "DS 309/2026",
+      "Nombre": "Decreto 309",
+      "Ámbito/Área": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-086",
+      "Norma": "Resolución 74 Exenta",
+      "Nombre": "Resolución 74 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-087",
+      "Norma": "DS 27/2026",
+      "Nombre": "Decreto 27 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-088",
+      "Norma": "DS 1047/2026",
+      "Nombre": "Decreto 1047 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-089",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto 75 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-090",
+      "Norma": "DS 309/2026",
+      "Nombre": "Decreto 309",
+      "Ámbito/Área": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-091",
+      "Norma": "Resolución 74 Exenta",
+      "Nombre": "Resolución 74 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-05-29T09:55:29.690883"
+  "last_sync": "2026-05-29T15:33:35.948360"
 }
