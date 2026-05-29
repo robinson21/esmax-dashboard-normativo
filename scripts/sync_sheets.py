@@ -2,7 +2,7 @@
 """Read ESMAX Google Sheet and export as JSON for the dashboard."""
 import json, os, sys
 from urllib.request import Request, urlopen
-from urllib.parse import urlencode
+from urllib.parse import urlencode, quote
 
 SHEET_ID = os.environ['SHEET_ID']
 CLIENT_ID = os.environ['GOOGLE_CLIENT_ID']
@@ -23,7 +23,8 @@ def get_access_token():
 
 def fetch_sheet(access_token, sheet_name, range_str):
     """Read a sheet tab via Google Sheets API v4."""
-    url = f"https://sheets.googleapis.com/v4/spreadsheets/{SHEET_ID}/values/'{sheet_name}'!{range_str}"
+    encoded_range = quote(f"'{sheet_name}'!{range_str}")
+    url = f"https://sheets.googleapis.com/v4/spreadsheets/{SHEET_ID}/values/{encoded_range}"
     req = Request(url, headers={'Authorization': f'Bearer {access_token}'})
     resp = json.loads(urlopen(req).read())
     rows = resp.get('values', [])
