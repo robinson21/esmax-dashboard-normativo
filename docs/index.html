@@ -408,7 +408,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
 });
 
-loadData();
+document.addEventListener('DOMContentLoaded', () => { loadData(); });
 </script>
 </body>
 </html>
