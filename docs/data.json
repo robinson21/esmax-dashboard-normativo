@@ -1119,6 +1119,174 @@
       "Responsable": "Encargado SST",
       "Estado": "Vigente",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-092",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-093",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-094",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-095",
+      "Norma": "Resolución Exenta N° 140/2017",
+      "Nombre": "Resolución Exenta N° 140",
+      "Ámbito": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan sustancias químicas peligrosas",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-096",
+      "Norma": "Circular 3709",
+      "Nombre": "Circular 3709",
+      "Ámbito": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan sustancias químicas peligrosas",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-097",
+      "Norma": "Resolución Exenta N° 00821/20",
+      "Nombre": "Resolución Exenta N° 00821",
+      "Ámbito": "",
+      "Organismo": "MMA",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se generan residuos peligrosos",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-098",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-099",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-100",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-101",
+      "Norma": "Resolución Exenta N° 140/2017",
+      "Nombre": "Resolución Exenta N° 140",
+      "Ámbito": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan sustancias químicas peligrosas",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-102",
+      "Norma": "Circular 3709",
+      "Nombre": "Circular 3709",
+      "Ámbito": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan sustancias químicas peligrosas",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-103",
+      "Norma": "Resolución Exenta N° 00821/20",
+      "Nombre": "Resolución Exenta N° 00821",
+      "Ámbito": "",
+      "Organismo": "MMA",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se generan residuos peligrosos",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
     }
   ],
   "planes": [
@@ -2001,6 +2169,138 @@
       "Responsable": "Encargado SST",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-092",
+      "Norma": "DS 108/2014",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-093",
+      "Norma": "DS 160/2010",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-094",
+      "Norma": "DS 226/1982",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-095",
+      "Norma": "Resolución Exenta N° 140/2017",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-096",
+      "Norma": "Circular 3709",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-097",
+      "Norma": "Resolución Exenta N° 00821/20",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-098",
+      "Norma": "DS 108/2014",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-099",
+      "Norma": "DS 160/2010",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-100",
+      "Norma": "DS 226/1982",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-101",
+      "Norma": "Resolución Exenta N° 140/2017",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-102",
+      "Norma": "Circular 3709",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-103",
+      "Norma": "Resolución Exenta N° 00821/20",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -2723,7 +3023,115 @@
       "Organismo": "MINSAL",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-092",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-093",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-094",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-095",
+      "Norma": "Resolución Exenta N° 140/2017",
+      "Nombre": "Resolución Exenta N° 140",
+      "Ámbito/Área": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-096",
+      "Norma": "Circular 3709",
+      "Nombre": "Circular 3709",
+      "Ámbito/Área": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-097",
+      "Norma": "Resolución Exenta N° 00821/20",
+      "Nombre": "Resolución Exenta N° 00821",
+      "Ámbito/Área": "",
+      "Organismo": "MMA",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-098",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-099",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-100",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-101",
+      "Norma": "Resolución Exenta N° 140/2017",
+      "Nombre": "Resolución Exenta N° 140",
+      "Ámbito/Área": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-102",
+      "Norma": "Circular 3709",
+      "Nombre": "Circular 3709",
+      "Ámbito/Área": "",
+      "Organismo": "SUSESO",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-103",
+      "Norma": "Resolución Exenta N° 00821/20",
+      "Nombre": "Resolución Exenta N° 00821",
+      "Ámbito/Área": "",
+      "Organismo": "MMA",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-05-30T08:28:45.485352"
+  "last_sync": "2026-05-30T13:39:20.619862"
 }
