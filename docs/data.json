@@ -1511,6 +1511,174 @@
       "Responsable": "Encargado SST",
       "Estado": "Vigente",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-120",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-121",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la instalacion de combustibles en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-122",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-123",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto 140 Exento",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la gestion de residuos peligrosos en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-124",
+      "Norma": "Resolucion 74/2026",
+      "Nombre": "Resolucion 74 Exenta",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la seguridad y salud en el trabajo en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-125",
+      "Norma": "Resolucion 12/2026",
+      "Nombre": "Resolucion 12 Exenta",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la seguridad y salud en el trabajo en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-126",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-127",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la instalacion de combustibles en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-128",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-129",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto 140 Exento",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la gestion de residuos peligrosos en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-130",
+      "Norma": "Resolucion 74/2026",
+      "Nombre": "Resolucion 74 Exenta",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la seguridad y salud en el trabajo en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-131",
+      "Norma": "Resolucion 12/2026",
+      "Nombre": "Resolucion 12 Exenta",
+      "Ámbito": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula la seguridad y salud en el trabajo en la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
     }
   ],
   "planes": [
@@ -2701,6 +2869,138 @@
       "Responsable": "Encargado SST",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-120",
+      "Norma": "DS 108/2014",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-121",
+      "Norma": "DS 160/2010",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-122",
+      "Norma": "DS 226/1982",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-123",
+      "Norma": "DS 140/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-124",
+      "Norma": "Resolucion 74/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-125",
+      "Norma": "Resolucion 12/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-126",
+      "Norma": "DS 108/2014",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-127",
+      "Norma": "DS 160/2010",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-128",
+      "Norma": "DS 226/1982",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-129",
+      "Norma": "DS 140/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-130",
+      "Norma": "Resolucion 74/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-131",
+      "Norma": "Resolucion 12/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -3675,7 +3975,115 @@
       "Organismo": "MMA",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-120",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-121",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-122",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-123",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto 140 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-124",
+      "Norma": "Resolucion 74/2026",
+      "Nombre": "Resolucion 74 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-125",
+      "Norma": "Resolucion 12/2026",
+      "Nombre": "Resolucion 12 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-126",
+      "Norma": "DS 108/2014",
+      "Nombre": "Decreto 108",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-127",
+      "Norma": "DS 160/2010",
+      "Nombre": "Decreto 160",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-128",
+      "Norma": "DS 226/1982",
+      "Nombre": "Decreto 226",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-129",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto 140 Exento",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-130",
+      "Norma": "Resolucion 74/2026",
+      "Nombre": "Resolucion 74 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-131",
+      "Norma": "Resolucion 12/2026",
+      "Nombre": "Resolucion 12 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-06-01T04:07:43.043017"
+  "last_sync": "2026-06-01T11:35:42.940891"
 }
