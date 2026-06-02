@@ -1679,6 +1679,146 @@
       "Responsable": "Encargado SST",
       "Estado": "Vigente",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-132",
+      "Norma": "DS 108/2014",
+      "Nombre": "Reglamento de almacenamiento de combustibles",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-133",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se producen lubricantes",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-134",
+      "Norma": "DS 152/2026",
+      "Nombre": "Decreto de regulacion de combustibles",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-135",
+      "Norma": "Resolucion 16171/2023",
+      "Nombre": "Resolucion de regulacion de combustibles",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-136",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se producen lubricantes",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-137",
+      "Norma": "DS 108/2014",
+      "Nombre": "Reglamento de almacenamiento de combustibles",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-138",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se producen lubricantes",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-139",
+      "Norma": "DS 152/2026",
+      "Nombre": "Decreto de regulacion de combustibles",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-140",
+      "Norma": "Resolucion 16171/2023",
+      "Nombre": "Resolucion de regulacion de combustibles",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-141",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se producen lubricantes",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
     }
   ],
   "planes": [
@@ -3001,6 +3141,116 @@
       "Responsable": "Encargado SST",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-132",
+      "Norma": "DS 108/2014",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-133",
+      "Norma": "DS 140/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-134",
+      "Norma": "DS 152/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-135",
+      "Norma": "Resolucion 16171/2023",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-136",
+      "Norma": "DS 75/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-137",
+      "Norma": "DS 108/2014",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-138",
+      "Norma": "DS 140/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-139",
+      "Norma": "DS 152/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-140",
+      "Norma": "Resolucion 16171/2023",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-141",
+      "Norma": "DS 75/2026",
+      "Ámbito": "",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -4083,7 +4333,97 @@
       "Organismo": "MINSAL",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-132",
+      "Norma": "DS 108/2014",
+      "Nombre": "Reglamento de almacenamiento de combustibles",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-133",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-134",
+      "Norma": "DS 152/2026",
+      "Nombre": "Decreto de regulacion de combustibles",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-135",
+      "Norma": "Resolucion 16171/2023",
+      "Nombre": "Resolucion de regulacion de combustibles",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-136",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-137",
+      "Norma": "DS 108/2014",
+      "Nombre": "Reglamento de almacenamiento de combustibles",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-138",
+      "Norma": "DS 140/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-139",
+      "Norma": "DS 152/2026",
+      "Nombre": "Decreto de regulacion de combustibles",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-140",
+      "Norma": "Resolucion 16171/2023",
+      "Nombre": "Resolucion de regulacion de combustibles",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-141",
+      "Norma": "DS 75/2026",
+      "Nombre": "Decreto de regulacion de lubricantes",
+      "Ámbito/Área": "",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-06-02T04:01:28.205786"
+  "last_sync": "2026-06-02T10:24:39.275644"
 }
