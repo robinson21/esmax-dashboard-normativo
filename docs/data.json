@@ -110,7 +110,7 @@
       "Frecuencia Verificación": "Anual",
       "Responsable": "Encargado Planta / SEC",
       "Estado": "Vigente",
-      "Link Norma": "https://bcn.cl/leychile/navegar?idNorma=1001227"
+      "Link Norma": "https://bcn.cl/leychile/navegar?idNorma=1003954"
     },
     {
       "ID": "NOR-009",
@@ -138,7 +138,7 @@
       "Frecuencia Verificación": "Continuo",
       "Responsable": "Encargado Bodega / SST",
       "Estado": "Vigente",
-      "Link Norma": "https://www.inn.cl/normas-tecnicas"
+      "Link Norma": "https://bcn.cl/leychile/navegar?idNorma=1004120"
     },
     {
       "ID": "NOR-011",
@@ -152,7 +152,7 @@
       "Frecuencia Verificación": "Continuo",
       "Responsable": "Encargado Bodega / Calidad",
       "Estado": "Vigente",
-      "Link Norma": "https://www.inn.cl/normas-tecnicas"
+      "Link Norma": "https://bcn.cl/leychile/navegar?idNorma=1004120"
     },
     {
       "ID": "NOR-012",
@@ -959,7 +959,7 @@
       "Ámbito": "",
       "Organismo": "MINSAL",
       "Aplica": "SI",
-      "Justificación": "Aplica porque en planta se manipulan residuos peligrosos regulados por MINSAL",
+      "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la industria de lubricantes.",
       "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Encargado SST",
@@ -1099,7 +1099,7 @@
       "Ámbito": "",
       "Organismo": "MINSAL",
       "Aplica": "SI",
-      "Justificación": "Aplica porque regula la gestion de residuos peligrosos en la planta de lubricantes.",
+      "Justificación": "Aplica porque regula la protección de los trabajadores en la industria de lubricantes.",
       "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Encargado SST",
@@ -1141,7 +1141,7 @@
       "Ámbito": "",
       "Organismo": "SEC",
       "Aplica": "SI",
-      "Justificación": "Aplica porque en planta se manipulan combustibles",
+      "Justificación": "Aplica porque regula la protección de los trabajadores en la industria de lubricantes.",
       "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Jefe Planta",
@@ -1185,6 +1185,20 @@
       "Aplica": "SI",
       "Justificación": "",
       "Método Cumplimiento": "Cumplir con los requisitos de almacenamiento y manejo de combustibles",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-153",
+      "Norma": "Resolución 5 Exenta",
+      "Nombre": "Resolución 5 Exenta",
+      "Ámbito": "SEC/Combustibles",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la industria de lubricantes.",
+      "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Jefe Planta",
       "Estado": "Vigente",
@@ -2126,6 +2140,17 @@
       "Responsable": "Jefe Planta",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-153",
+      "Norma": "Resolución 5 Exenta",
+      "Ámbito": "SEC/Combustibles",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Alta",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -2893,7 +2918,16 @@
       "Organismo": "SEC",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-153",
+      "Norma": "Resolución 5 Exenta",
+      "Nombre": "Resolución 5 Exenta",
+      "Ámbito/Área": "SEC/Combustibles",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-06-07T08:56:23.737435"
+  "last_sync": "2026-06-07T13:53:23.208220"
 }
