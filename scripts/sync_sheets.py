@@ -17,7 +17,9 @@ def get_access_token():
         'refresh_token': REFRESH_TOKEN,
         'grant_type': 'refresh_token'
     }).encode()
-    req = Request('https://oauth2.googleapis.com/token', data=data)
+    req = Request('https://oauth2.googleapis.com/token', data=data,
+                  headers={'Content-Type': 'application/x-www-form-urlencoded',
+                           'Accept': 'application/json'})
     resp = json.loads(urlopen(req).read())
     return resp['access_token']
 
