@@ -959,7 +959,7 @@
       "Ámbito": "",
       "Organismo": "MINSAL",
       "Aplica": "SI",
-      "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la industria de lubricantes.",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
       "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Encargado SST",
@@ -1099,7 +1099,7 @@
       "Ámbito": "",
       "Organismo": "MINSAL",
       "Aplica": "SI",
-      "Justificación": "Aplica porque regula la protección de los trabajadores en la industria de lubricantes.",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
       "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Encargado SST",
@@ -1198,6 +1198,34 @@
       "Organismo": "SEC",
       "Aplica": "SI",
       "Justificación": "Aplica porque regula el almacenamiento y manejo de combustibles en la industria de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Jefe Planta",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-154",
+      "Norma": "Resolución 733 EXENTA/2026",
+      "Nombre": "Resolución que establece coeficientes para proyección de reajuste y de interés de boletas bancarias de garantía",
+      "Ámbito": "MINSAL",
+      "Organismo": "M. de Energía",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles y aceites minerales",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-155",
+      "Norma": "Circular 232627/2026",
+      "Nombre": "Circular que establece normas para combustibles",
+      "Ámbito": "SEC/Combustibles",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan combustibles y aceites minerales",
       "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Jefe Planta",
@@ -2151,6 +2179,28 @@
       "Responsable": "Jefe Planta",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-154",
+      "Norma": "Resolución 733 EXENTA/2026",
+      "Ámbito": "MINSAL",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-155",
+      "Norma": "Circular 232627/2026",
+      "Ámbito": "SEC/Combustibles",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Alta",
+      "Estado Avance": "En curso",
+      "Responsable": "Jefe Planta",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -2927,7 +2977,25 @@
       "Organismo": "SEC",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-154",
+      "Norma": "Resolución 733 EXENTA/2026",
+      "Nombre": "Resolución que establece coeficientes para proyección de reajuste y de interés de boletas bancarias de garantía",
+      "Ámbito/Área": "MINSAL",
+      "Organismo": "M. de Energía",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-155",
+      "Norma": "Circular 232627/2026",
+      "Nombre": "Circular que establece normas para combustibles",
+      "Ámbito/Área": "SEC/Combustibles",
+      "Organismo": "SEC",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-06-08T04:03:19.122965"
+  "last_sync": "2026-06-08T10:57:02.979726"
 }
