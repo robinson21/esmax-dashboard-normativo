@@ -1231,6 +1231,34 @@
       "Responsable": "Jefe Planta",
       "Estado": "Vigente",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-156",
+      "Norma": "Resolución 49 Exenta",
+      "Nombre": "Resolución 49 Exenta",
+      "Ámbito": "",
+      "Organismo": "M. de Energía",
+      "Aplica": "SI",
+      "Justificación": "",
+      "Método Cumplimiento": "Cumplir con los requisitos de seguridad y medio ambiente",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-157",
+      "Norma": "Resolución 35 Exenta",
+      "Nombre": "Resolución 35 Exenta",
+      "Ámbito": "",
+      "Organismo": "M. de Energía",
+      "Aplica": "SI",
+      "Justificación": "",
+      "Método Cumplimiento": "Cumplir con los requisitos de seguridad y medio ambiente",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
     }
   ],
   "planes": [
@@ -2201,6 +2229,28 @@
       "Responsable": "Jefe Planta",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-156",
+      "Norma": "Resolución 49 Exenta",
+      "Ámbito": "",
+      "Acción Requerida": "Cumplir con los requisitos de seguridad y medio ambiente",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-157",
+      "Norma": "Resolución 35 Exenta",
+      "Ámbito": "",
+      "Acción Requerida": "Cumplir con los requisitos de seguridad y medio ambiente",
+      "Prioridad": "Media",
+      "Estado Avance": "En curso",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -2995,7 +3045,25 @@
       "Organismo": "SEC",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-156",
+      "Norma": "Resolución 49 Exenta",
+      "Nombre": "Resolución 49 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "M. de Energía",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-157",
+      "Norma": "Resolución 35 Exenta",
+      "Nombre": "Resolución 35 Exenta",
+      "Ámbito/Área": "",
+      "Organismo": "M. de Energía",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-06-09T09:44:03.595432"
+  "last_sync": "2026-06-09T14:52:15.203032"
 }
