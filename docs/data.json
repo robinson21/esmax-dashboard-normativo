@@ -1259,6 +1259,20 @@
       "Responsable": "Encargado SST",
       "Estado": "Vigente",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-158",
+      "Norma": "DS 75 Exento/2026",
+      "Nombre": "Decreto 75 Exento/2026",
+      "Ámbito": "General",
+      "Organismo": "BCN",
+      "Aplica": "SI",
+      "Justificación": "Aplica a ESMAX porque regula aspectos generales que podrían afectar la operación de la planta de lubricantes.",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Por definir",
+      "Estado": "Vigente",
+      "Link Norma": ""
     }
   ],
   "planes": [
@@ -2251,6 +2265,17 @@
       "Responsable": "Encargado SST",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-158",
+      "Norma": "DS 75 Exento/2026",
+      "Ámbito": "General",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Media",
+      "Estado Avance": "Completado",
+      "Responsable": "Por definir",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -3063,7 +3088,16 @@
       "Organismo": "M. de Energía",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-158",
+      "Norma": "DS 75 Exento/2026",
+      "Nombre": "Decreto 75 Exento/2026",
+      "Ámbito/Área": "General",
+      "Organismo": "BCN",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-06-10T10:01:18.372859"
+  "last_sync": "2026-06-10T15:35:47.480737"
 }
