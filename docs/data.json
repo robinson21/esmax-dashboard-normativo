@@ -1267,10 +1267,38 @@
       "Ámbito": "General",
       "Organismo": "BCN",
       "Aplica": "SI",
-      "Justificación": "Aplica a ESMAX porque regula aspectos generales que podrían afectar la operación de la planta de lubricantes.",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por SEC",
       "Método Cumplimiento": "",
       "Frecuencia Verificación": "Anual",
       "Responsable": "Por definir",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-159",
+      "Norma": "Resolución 32201 EXENTA 21-ABR-2020",
+      "Nombre": "Resolución que regula la seguridad en la manipulación de aceites minerales",
+      "Ámbito": "SST",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se manipulan aceites minerales regulados por MINSAL",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
+      "Estado": "Vigente",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-160",
+      "Norma": "Resolución 12 Exenta (21-ago-2020)",
+      "Nombre": "Resolución que regula el almacenamiento de combustibles",
+      "Ámbito": "SST",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Justificación": "Aplica porque en planta se almacenan combustibles",
+      "Método Cumplimiento": "",
+      "Frecuencia Verificación": "Anual",
+      "Responsable": "Encargado SST",
       "Estado": "Vigente",
       "Link Norma": ""
     }
@@ -2276,6 +2304,28 @@
       "Responsable": "Por definir",
       "Fecha Término": "Por definir",
       "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-159",
+      "Norma": "Resolución 32201 EXENTA 21-ABR-2020",
+      "Ámbito": "SST",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Alta",
+      "Estado Avance": "Sin iniciar",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
+    },
+    {
+      "ID": "NOR-160",
+      "Norma": "Resolución 12 Exenta (21-ago-2020)",
+      "Ámbito": "SST",
+      "Acción Requerida": "Por definir",
+      "Prioridad": "Alta",
+      "Estado Avance": "Completado",
+      "Responsable": "Encargado SST",
+      "Fecha Término": "Por definir",
+      "Verificación": "Anual"
     }
   ],
   "resumen": [
@@ -3097,7 +3147,25 @@
       "Organismo": "BCN",
       "Aplica": "SI",
       "Link Norma": ""
+    },
+    {
+      "ID": "NOR-159",
+      "Norma": "Resolución 32201 EXENTA 21-ABR-2020",
+      "Nombre": "Resolución que regula la seguridad en la manipulación de aceites minerales",
+      "Ámbito/Área": "SST",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
+    },
+    {
+      "ID": "NOR-160",
+      "Norma": "Resolución 12 Exenta (21-ago-2020)",
+      "Nombre": "Resolución que regula el almacenamiento de combustibles",
+      "Ámbito/Área": "SST",
+      "Organismo": "MINSAL",
+      "Aplica": "SI",
+      "Link Norma": ""
     }
   ],
-  "last_sync": "2026-06-11T04:00:56.690463"
+  "last_sync": "2026-06-11T10:25:34.118778"
 }
