@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Read ESMAX Google Sheet and export as JSON for the dashboard."""
 import json, os, sys
+import requests
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode, quote
 
