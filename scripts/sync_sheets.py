@@ -64,8 +64,8 @@ def fetch_sheet_public(sheet_name, range_str):
 def main():
     # Use API key if available (public sheet, no expiry)
     if API_KEY:
-        fichas = fetch_sheet_public('Fichas de Cumplimiento', 'A1:L200')
-        planes = fetch_sheet_public('Plan de Acción', 'A1:I200')
+        fichas = fetch_sheet_public('Fichas Cumplimiento', 'A1:L200')
+        planes = fetch_sheet_public('Plan de Accion', 'A1:I200')
         resumen = fetch_sheet_public('Resumen Normas Aplicables', 'A1:G200')
     else:
         # Fallback: OAuth (will expire)
